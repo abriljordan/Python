@@ -1,0 +1,45 @@
+Make a Hotel Reservation System with the following requirements:
+1.    Implement it using OOP Concepts (10 points)
+2.    The application will ask the user to choose the following options: (10 points)
+       a.     V-View all Reservations
+       b.     M-Make Reservation
+       c.     D-Delete Reservation
+       d.     G-Generate Report
+       e.     E-Exit
+3.    If Make Reservation is selected, the application will ask the user to input the following: (25 points)
+
+       a.     Name – Name of guest
+       b.     Date – Date of Check-in
+       c.     Time – Time of Check-in
+       d.     Adults – Number of adults in the room
+       e.     Children – Number of children in the room
+Then save the data to <yoursurname>.txt including the Entry# which is a system-generated number and the total of the reservation. The user can add as many reservations as they want.
+
+Note: Adult = P500/head , Children = P300/head
+
+4.    If View all Reservations is selected, it must display all data: (20 points)
+Sample Output:
+`         Entry#          Name           Date             Time             Adults Children          Total
+          1                  Mario            8/25/2021     8:00am         2        1                 1300
+          2                  Luigi             12/22/2021   12:00pm       2        2                 1600
+
+5.    If Delete Reservation is selected, it will ask for the Entry # then deletes that entry (15 points). The deleted entry should also be deleted from reservation.txt
+6.    If Generate Report is selected, it must the following: (Entry#, Name, Date, Time, Adults, Children, SubTotal and the Grand total) (15 points)
+ Sample Output:
+`         Entry# Name   Date            Time         Adults  Sub-total Children Sub-total          Total
+          1          Mario   8/25/2021    8:00am     2         1000        1              300                  1300
+          2          Luigi    12/22/2021  12:00pm   2         1000        2              600                  1600
+                                                                                       2000                        900                  2900
+7.    If Exit, print “Thank You!” (5 points)
+
+General Specification:
+1.    Add an appropriate exception in your program (15 points)
+2.    The system will exit only when the user selects “E” Option (5 points)
+
+Hint:
+a.     You can use any of the following: List, Tuple, Dictionary
+b.     len() function is useful in getting the number of elements in your list, tuple or dictionary.
+       Example: x = len(Reservation) , where Reservation could be a list, tuple or a dictionary
+c.     split() function can divided your string according to the set delimiter.
+       Example: s = “A,B,C”
+                        x = s.split(“,”) , x will become a list that contains [“A”,”B”,”C”]
