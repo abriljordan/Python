@@ -2,7 +2,6 @@ import random
 
 db_name = "casinillo.txt"
 
-
 class Reservation:
     def __init__(self, menuSelection):
         self.menuSelection = menuSelection
